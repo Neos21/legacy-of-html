@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta name="author" content="Neo">
+    <meta name="description" content="ご説明">
+    <meta name="keywords" content="Neo,Neos21,GitHub,HTML">
+    <meta name="robots" content="index,follow">
+    <meta name="generator" content="notepad">
+    <title>Legacy of HTML</title>
+  </head>
+  <body topmargin="20" bottommargin="20" leftmargin="15" rightmargin="15" bgcolor="#fcfcfc" text="#111111" link="#0000ff" alink="#ff0000" vlink="#800080" scroll="yes">
+
+<h1>Legacy of HTML</h1>
+<p>昔を懐かしんで HTML を書いてみる。</p>
+<p>このページは HTML4 Transitional で作成。ソースを表示して見てみてね。</p>
+<hr>
+
+<div style="width: 640px;">
+  <h2>TT : TeleType</h2>
+  <p align="right">
+    <tt>
+      From: XXX<br>
+      Last-Updated: 2018-01-01
+    </tt>
+  </p>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/tt -->
+</div>
+
+<div style="width: 640px;">
+  <center>
+    <h2>Center</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </center>
+</div>
+
+<div style="width: 640px;">
+  <h2>Marquee</h2>
+  <marquee direction="up" height="50">Normal</marquee>
+  <marquee behavior="slide" direction="right" bgcolor="#ffff00" width="400" height="50" scrollamount="12" onstart="console.log('On Start');">Behavior : Slide</marquee>
+  <marquee behavior="alternate" direction="down" height="100" bgcolor="#00ffff" hspace="20" vspace="20" loop="5" scrollamount="20" scrolldelay="200" onbounce="console.log('On Bounce');">Behavior : Alternate</marquee>
+  <marquee id="marquee-scroll" behavior="scroll" direction="left" bgcolor="#00ff00" onfinish="console.log('On Finish');" scrolldelay="10" truespeed>Behavior : Scroll</marquee>
+  <button type="button" onclick="document.getElementById('marquee-scroll').start();">Start</button> <button type="button" onclick="document.getElementById('marquee-scroll').stop();">Stop</button>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/marquee -->
+</div>
+
+<div style="width: 640px;">
+  <h2>Blink</h2>
+  <blink>Blink</blink>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/blink -->
+</div>
+
+<div style="width: 640px; overflow: auto;">
+  <h2>NoBR</h2>
+  <p><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</nobr></p>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/nobr -->
+</div>
+
+<div style="width: 640px;">
+  <h2>No Embed</h2>
+  <noembed>No Embed</noembed>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/noembed -->
+  
+  <h2>No Script</h2>
+  <noscript>No Script</noscript>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/noscript -->
+  
+  <h2>Big</h2>
+  <p><big>Big</big> Normal</p>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/big -->
+  
+  <h2>Acronym</h2>
+  <p><acronym title="World Wide Web">WWW</acronym></p>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/acronym -->
+  
+  <h2>Image</h2>
+  <p><image src="image.gif"></p>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/image -->
+  
+  <h2>Listing</h2>
+  <listing>Listing</listing>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/listing -->
+  <!-- https://html.com/tags/listing/ -->
+  
+  <h2>Multi Col</h2>
+  <multicol cols="3" gutter="15" width="80">
+    Multi Col Multi Col Multi Col Multi Col Multi Col Multi Col Multi Col Multi Col Multi Col Multi Col Multi Col Multi Col Multi Col Multi Col
+  </multicol>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/multicol -->
+  <!-- http://www.tohoho-web.com/html/multicol.htm -->
+  
+  <h2>Spacer</h2>
+  <spacer type="vertical" size="20"></spacer>Vertical
+  <spacer type="horizontal" size="30"></spacer>Horizontal
+  <spacer type="block" width="10" height="20" align="right"></spacer>Block
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/spacer -->
+  
+  <h2>Strike</h2>
+  <p><strike>Strike</strike></p>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/strike -->
+  
+  <h2>XMP (Example)</h2>
+  <xmp>XMP</xmp>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/xmp -->
+  
+  <h2>Dir</h2>
+  <dir compact>
+    <li>hoge</li>
+    <li>fuga</li>
+  </dir>
+  <!-- https://developer.mozilla.org/ja/docs/HTML/Element/dir -->
+</div>
+
+<!--
+  - https://developer.mozilla.org/ja/docs/Web/HTML/Element/applet
+  - https://developer.mozilla.org/ja/docs/Web/HTML/Element/bgsound
+    <bgsound src="sound.mid" loop="infinite" volume="0" balance="0">
+  - https://developer.mozilla.org/ja/docs/Web/HTML/Element/basefont
+    <basefont color="#ff0000" face="Helvetica" size="+2">
+  - https://developer.mozilla.org/ja/docs/Web/HTML/Element/frameset
+  - https://developer.mozilla.org/ja/docs/Web/HTML/Element/frame
+  - https://developer.mozilla.org/ja/docs/Web/HTML/Element/noframes
+    <frameset cols="50%,50%">
+      <frame src="left.html" noresize scrolling="yes" marginwidth="10" marginheight="5" frameborder>
+      <frame src="right.html">
+    </frameset>
+    <noframes>No Frames</noframes>
+  - https://developer.mozilla.org/ja/docs/Web/HTML/Element/isindex
+    <head>
+      <isindex prompt="Search Document" action="?">
+    </head>
+  - https://developer.mozilla.org/ja/docs/Web/HTML/Element/nextid
+  - http://www.itsenka.com/contents/development/html-css/html/nextid.html
+    <head>
+      <nextid n="2">
+    </head>
+  - https://www.codehelp.co.uk/html/deprecated.html
+    body : background
+    ul, ol : compact (line-height: 80%)
+    br : clear
+    img, object : hspace, vspace
+    hr : noshade, size
+    ol : start
+    li : type, value
+-->
+
+<hr>
+<div>
+  <h2>Author</h2>
+  <p><a href="http://neo.s21.xrea.com/">Neo</a> (<a href="https://twitter.com/Neos21">@Neos21</a>)</p>
+  
+  <h2>Links</h2>
+  <ul>
+    <li><a href="http://neo.s21.xrea.com/">Neo's World</a></li>
+    <li><a href="http://neos21.hatenablog.com/">Corredor</a></li>
+    <li><a href="http://neos21.hatenablog.jp/">Murga</a></li>
+    <li><a href="http://neos21.hateblo.jp/">El Mylar</a></li>
+    <li><a href="https://neos21.github.io/">Neo's GitHub Pages</a></li>
+    <li><a href="https://github.com/Neos21">GitHub - Neos21</a></li>
+  </ul>
+</div>
+<hr>
+
+<!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/plaintext -->
+<h2>PlainText</h2>
+<plaintext>
+PlainText.
+End.
+
+  </body>
+</html>
